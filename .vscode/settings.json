@@ -1,0 +1,7 @@
+{
+    "git-blame.gitWebUrl": "",
+    "DJANGO_SETTINGS_MODULE": "project.setting.local",
+    "python.defaultInterpreterPath": "/home/the-iron-ryan/.local/pipx/venvs/website_venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true
+}

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git-blame.gitWebUrl": "",
+		"git.ignoreLimitWarning": true
+	}
+}
