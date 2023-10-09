@@ -28,7 +28,8 @@ if not SECRET_KEY:
     SECRET_KEY = ''.join(random.choice( string.ascii_lowercase  ) for i in range( 32 ))
 
 # Render Deployment Code
-DEBUG = 'RENDER' not in os.environ
+# DEBUG = 'RENDER' not in os.environ
+DEBUG = True
 
 # Docker HOST
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
@@ -151,8 +152,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/' 
+STATICFILES_DIRS = [ 
+    BASE_DIR / "static" # static files folder location for development
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # static files folder location for poduction
 
 #if not DEBUG:
 #    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

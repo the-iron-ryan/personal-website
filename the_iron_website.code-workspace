@@ -6,6 +6,10 @@
 	],
 	"settings": {
 		"git-blame.gitWebUrl": "",
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.python"
+		},
+		"python.formatting.provider": "none"
 	}
 }
