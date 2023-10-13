@@ -7,3 +7,7 @@ def index(request):
 
     # Page from the theme 
     return render(request, 'pages/index.html')
+
+# DEBUG: render the default template
+def template(request):
+    return render(request, 'pages/template.html')
