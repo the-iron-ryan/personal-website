@@ -11,3 +11,10 @@ def index(request):
 # DEBUG: render the default template
 def template(request):
     return render(request, 'pages/template.html')
+    path('experience/', views.experience, name='experience'),
+# === Navbar ===
+def experience(request):
+    return render(request, 'pages/experience.html')
+
+def projects(request):
+    return render(request, 'pages/projects.html')
