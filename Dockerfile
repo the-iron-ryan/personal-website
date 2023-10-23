@@ -11,6 +11,24 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# TODO: Ensure ImageMagick AND (possibly?) Ghostscript is installed
+
+# FROM debian:bullseye-slim
+
+# # Install ImageMagick
+# RUN apt-get update && \
+#     apt-get install -y imagemagick && \
+#     rm -rf /var/lib/apt/lists/*
+
+# OR
+
+# FROM alpine:latest
+
+# # Install ImageMagick
+# RUN apk --no-cache add imagemagick
+
+
+
 # running migrations
 RUN python manage.py migrate
 

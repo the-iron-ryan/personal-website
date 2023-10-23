@@ -19,80 +19,40 @@
         <div class="section section-sm pb-0 mb-n4">
           <div class="container">
             <div class="row justify-content-center">
-              <h3 class="text-center">NMR Labs</h3>
+              <h2 class="text-center">NMR Labs</h2>
             </div>
           </div>
         </div>
+
         <section class="section section-lg">
             <div class="section section-md">
               <div class="container text-dark">
+                {% for lab in labs %}
                   <div class="row mb-5">
-                      <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <a href="{% url 'about_us' %}" target="_blank" class="page-preview scale-up-hover-2">                              
-                          <img src="{% static 'assets/img/blog/image-1.jpg' %}" class="card-img-top rounded-top scale" alt="Project 1">
-                              <div class="card-body scale">
-                                  <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
-                                  <h3 class="h5 card-title mt-3">Lab 1: Qubits</h3>
-                                  <p class="card-text">For my first lab we worked on a spinsolve 80 machine to conduct </p>
-                                  <a href="#" class="show-on-hover btn btn-primary btn-sm">Learn More</a>
-                              </div>
-                            </a>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-7 mb-lg-0">
+                      <div class="col-12 mt-5">
                           <div class="card border-0 overflow-hidden">
                               <div class="position-relative">
-                                <a href="{% url 'about_us' %}" target="_blank" class="page-preview scale-up-hover-2">   
-                                  <img src="{% static 'assets/img/team/profile-picture-1.jpg' %}" class="card-img-top scale"
-                                      alt="Neil Portrait">
+                                <a href="{% url 'projects_lab' lab.pdf_title %}" target="_blank" class="page-preview scale-up-hover-2">   
+                                  <img src="{% static lab.static_preview_path %}" class="card-img-top scale"
+                                      alt="Lab Image">
                                 </a>
                               </div>
                               <div
                                   class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
-                                  <h3 class="h5 card-title">Neil D. Sims</h3>
-                                  <span class="text-gray"><span class="fas fa-map-marker-alt me-2"></span>New York,
-                                      USA</span>
-                                  <p class="mt-3">Neil drives the technical strategy of the platform and brand.</p>
+                                  <h3 class="h5 card-title">Lab 1: Qubits</h3>
+                                  <span class="text-gray">First lab biref descirption</span>
+                                  <p class="mt-3">First lab big descirption describing big details</p>
                                   <div class="btn-group">
                                       <button class="btn btn-secondary btn-icon">
-                                          <span class="me-1"><span class="far fa-user"></span></span>
-                                          Follow
-                                      </button>
-                                      <button class="btn btn-primary" aria-label="mesage button" title="message button">
-                                          <span aria-hidden="true" class="far fa-envelope"></span>
+                                          <span class="me-1"><span class="fas fa-book-open"></span></span>
+                                          Learn More
                                       </button>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                          <div class="card shadow text-center">
-                              <!-- Header -->
-                              <div class="card-header bg-white p-3">
-                                  <h3 class="text-primary mb-4">Basic</h3>
-                                  <span class="d-block">
-                                      <span class="display-1 text-dark fw-bold">
-                                          <span class="align-top font-medium">$</span>19
-                                      </span>
-                                      <span class="d-block text-gray font-small">/ month</span>
-                                  </span>
-                              </div>
-                              <!-- End Header -->
-                              <!-- Content -->
-                              <div class="card-body">
-                                  <ul class="list-unstyled mb-4">
-                                      <li class="list-item pb-3"><strong>1</strong> free domain</li>
-                                      <li class="list-item pb-3">Storage space: <strong>5GB</strong></li>
-                                      <li class="list-item pb-3"><strong>100k</strong> monthly visitors</li>
-                                      <li class="list-item pb-3">One-click staging site</li>
-                                      <li class="list-item pb-3">Search engine wizard </li>
-                                      <li class="list-item pb-3">Community support</li>
-                                  </ul>
-                                  <div class="d-grid"><a href="#" class="btn btn-primary animate-up-1">Purchase now</a></div>
-                              </div>
-                              <!-- End Content -->
-                          </div>
-                      </div>
                   </div>
+                {% endfor %}
               </div>
           </div>
         </section>

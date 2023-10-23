@@ -1,3 +1,4 @@
+from typing import Any
 from django.db import models
 
 # Create your models here.
@@ -12,6 +13,10 @@ class Project(models.Model):
     class Meta:
         # Make this an abstract class so that it wont be created in the database
         abstract = True
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        super().__init__(*args, **kwargs)
+        self.static_preview_path = ''
     
 
 class Lab(Project):
