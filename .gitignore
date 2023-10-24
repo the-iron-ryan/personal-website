@@ -13,3 +13,6 @@ env
 *.sqlite*
 
 .env
+
+# Ignore preview files generated inside of Lab pdf 
+/static/pdf/labs/*_preview.png
