@@ -71,5 +71,32 @@
     "description": "First NMR Lab",
     "pdf_title": "Lab_1_Single_Qubits__Ryan_Dougherty"
   }
+},
+{
+  "model": "home.lab",
+  "pk": 2,
+  "fields": {
+    "title": "Lab 2",
+    "description": "Second Lab",
+    "pdf_title": "Lab_2_Two_Qubits_Using_NMR__Ryan_Dougherty"
+  }
+},
+{
+  "model": "home.lab",
+  "pk": 3,
+  "fields": {
+    "title": "Lab 3",
+    "description": "Third Lab",
+    "pdf_title": "Lab_3_Two_Qubit_Gates__Ryan_Dougherty"
+  }
+},
+{
+  "model": "home.lab",
+  "pk": 4,
+  "fields": {
+    "title": "Lab 4",
+    "description": "Fourth and final lab",
+    "pdf_title": "Lab_4_Two_Qubit_Algorithms__RyanDougherty"
+  }
 }
 ]

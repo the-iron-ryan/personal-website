@@ -31,6 +31,10 @@ def projects(request):
             preview_filepath = f'static/pdf/labs/{lab.pdf_title}_preview.png'
             
             img.format = 'png'
+            img_width = img.size[0]
+            img_height = img.size[1]
+            img.crop(width=img_width, height=img_height // 2, gravity='north')
+            img.background_color = 'white'
             img.save(filename=preview_filepath)
             
             # Pass the path to the lab object. Make sure the path is relative to the static folder
