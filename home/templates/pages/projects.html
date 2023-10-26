@@ -34,17 +34,37 @@
         <section class="section section-lg">
             <div class="container">
                 <div class="row justify-content-between align-items-center mb-5 mb-lg-7">
-                <div class="col-12 col-lg-5 mb-5 mb-lg-0 order-lg-2">
-                <h2 class="h1">Bootstrap 5</h2>
-                <p class="mb-4 lead fw-bold">Latest version of Bootstrap without jQuery</p>
-                <p class="mb-4">Pixel is built using the latest version of Bootstrap 5 and we only used Vanilla
-                    Javascript for everything including the plugins</p>
-                <a href="https://themesberg.com/docs/pixel-bootstrap/components/accordions/" target="_blank"
-                    class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> Getting started</a>
-                </div>
-                <div class="col-lg-6">
-                <img class="border-2 rounded" src="{% static 'assets/img/lab/Qubit_Representation.png' %}" alt="Qubit">
-                </div>
+                    <div class="col-12 col-lg-5 mb-5 mb-lg-0 order-lg-2">
+                        <h2 class="h1">{{ labs.0.title }}</h2>
+                        <p class="mb-4 lead fw-bold">{{ labs.0.description }}</p>
+                        <p class="mb-4">
+                            {% lorem 1 b random %}
+                            {% lorem 1 b random %}
+                            {% lorem 1 b random %}
+                            {% lorem 1 b random %}
+                            {% lorem 1 b random %}
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-2 overflow-hidden">
+                            <div class="position-relative">
+                            <a href="{% url 'projects_lab' labs.0.pdf_title %}" target="_blank" class="page-preview scale-up-hover-2">   
+                                <img src="{% static labs.0.static_preview_path %}" class="card-img-top scale"
+                                    alt="Lab Image">
+                            </a>
+                        </div>
+                        <div class="card-body position-relative mt-10 mx-4 bg-white border border-gray-300 text-center rounded">
+                            <h3 class="h5 card-title"> {{ labs.0.title }} </h3>
+                            <span class="text-gray">{{ labs.0.description }}</span>
+                            <p class="mt-3">First lab big description describing big details</p>
+                            <div class="btn-group">
+                                <button class="btn btn-secondary btn-icon">
+                                    <span class="me-1"><span class="fas fa-book-open"></span></span>
+                                    Click to View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
