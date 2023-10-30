@@ -8,6 +8,7 @@ from django.db import models
 # ==================== #
 class Project(models.Model):
     title = models.CharField(max_length=100)
+    short_description = models.TextField(default="")
     description = models.TextField(default="")
     
     class Meta:
@@ -21,6 +22,7 @@ class Project(models.Model):
 
 class Lab(Project):
     pdf_title = models.CharField(max_length=100)
+    abstract = models.TextField(default="")
     
     class Meta:
         db_table = 'home_lab'

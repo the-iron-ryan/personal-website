@@ -38,14 +38,10 @@
                         <h2 class="h1">{{ labs.0.title }}</h2>
                         <p class="mb-4 lead fw-bold">{{ labs.0.description }}</p>
                         <p class="mb-4">
-                            {% lorem 1 b random %}
-                            {% lorem 1 b random %}
-                            {% lorem 1 b random %}
-                            {% lorem 1 b random %}
-                            {% lorem 1 b random %}
+                            In this lab we explored the fundamentals of nuclear magnetic resonance (NMR) and performed a set of 5 experiments exploring its effects on an isolated system. In NMR, we surround an ensemble of nuclei in a relatively homogeneous magnetic field which causes each of their spins to precess along their relative +Z axes. The nuclei for these experiments were all H1 atoms inside heavy water (deuterium oxide), which all have an atomic spin of 1. Through a set of coils located along the +X and -X axes, we were able to apply a set of additional short magnetic pulses oscillating at the Lamour frequency in order to alter the spin direction and orientation of the nuclei. With these magnetic pulses we were able to perform a free induction decay, pulse length calibration, pulse amplitude calibration, longitudinal relaxation, and Hahn echo experiment
                         </p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-lg-1">
                         <div class="card border-2 overflow-hidden">
                             <div class="position-relative">
                             <a href="{% url 'projects_lab' labs.0.pdf_title %}" target="_blank" class="page-preview scale-up-hover-2">   
