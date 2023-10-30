@@ -68,8 +68,10 @@
   "pk": 1,
   "fields": {
     "title": "Lab 1",
+    "short_description": "",
     "description": "First NMR Lab",
-    "pdf_title": "Lab_1_Single_Qubits__Ryan_Dougherty"
+    "pdf_title": "Lab_1_Single_Qubits__Ryan_Dougherty",
+    "abstract": "In this lab we explored the fundamentals of nuclear magnetic resonance (NMR) and performed a set of 5 experiments\nexploring its effects on an isolated system. In NMR, we surround an ensemble of nuclei in a relatively homogeneous\nmagnetic field which causes each of their spins to precess along their relative +Z axes. The nuclei for these\nexperiments were all H1 atoms inside heavy water (deuterium oxide), which all have an atomic spin of 1. Through\na set of coils located along the +X and -X axes, we were able to apply a set of additional short magnetic pulses\noscillating at the Lamour frequency in order to alter the spin direction and orientation of the nuclei. With these\nmagnetic pulses we were able to perform a free induction decay, pulse length calibration, pulse amplitude calibration,\nlongitudinal relaxation, and Hahn echo experiment."
   }
 },
 {
@@ -77,8 +79,10 @@
   "pk": 2,
   "fields": {
     "title": "Lab 2",
+    "short_description": "",
     "description": "Second Lab",
-    "pdf_title": "Lab_2_Two_Qubits_Using_NMR__Ryan_Dougherty"
+    "pdf_title": "Lab_2_Two_Qubits_Using_NMR__Ryan_Dougherty",
+    "abstract": "In this lab we built off of the concepts from the second lab to conduct 4 additional experiments to explore\nconstructing quantum gates using 1H and 13C nuclei spins. Quantum gates in NMR can be realized with a set of\npulse experiments conducted with pulses along the x and y axes. We also take advantage of the fact that our two\nspins are coupled by a local magnetic field, which will allow us to observe entanglement of the two spin states\nwhen we allow them to freely precess a long the z axes. Our first experiment consisted of building an approximate\nCNOT gate that is a phase off of the traditional CNOT. This was built with a set of 2 pulses and a free precession.\nWe also explored the concept of exhaustive averaging in order to negate noise the other spin states constitute in our\nexperiments. To do this, we performed a second experiment which built out the 3 possible pseudo state matrices.\nLastly, we combined the theory and experimental procedure of the first two to perform a true CNOT gate with no\nphase error. This was built with 4 pulses and a free precession. We were only able to generate results for the 13C\nspins since our NMR system had issues with doing 1H readouts. We go over the theory of how we’d expect to see\nthe 1H spins behave in the same experiments and compare our results to the 13C spins. We also discuss the results\nwe obtained and how they compare to the theory."
   }
 },
 {
@@ -86,17 +90,7 @@
   "pk": 3,
   "fields": {
     "title": "Lab 3",
+    "short_description": "",
     "description": "Third Lab",
-    "pdf_title": "Lab_3_Two_Qubit_Gates__Ryan_Dougherty"
-  }
-},
-{
-  "model": "home.lab",
-  "pk": 4,
-  "fields": {
-    "title": "Lab 4",
-    "description": "Fourth and final lab",
-    "pdf_title": "Lab_4_Two_Qubit_Algorithms__RyanDougherty"
-  }
-}
-]
+    "pdf_title": "Lab_3_Two_Qubit_Gates__Ryan_Dougherty",
+    "abstract": 
