@@ -24,7 +24,16 @@
                 <span class="h6 fw-bold">Motivation</span>
                 </div>
                 <p class="lead">
-                    The motivation for this project is to provide a set of labs that can be used to teach the foundations of quantum computing using NMR. 
+                    Nuclear Magnetic Resonnance (NMR) is a physical phenomenon that occurs when the nuclei of cetain atoms are surrounded by a strong magnetic field and exposed to an additional weak oscillating magnetic field (or pulse) in order to alter the nuclei's state and measure information about it. The existance of the strong magnetic field will cause a majority of the spins to polarize in the direction of the field, and precess about their polarized direction. Its worth noting that not all spins will polarize in the direction of the field; the distribution of the spins' polarizations will follow a Boltzmann distribution.  
+                </p>
+                <p class="lead">
+                    In the case of our NMR experiments, we used nuclei of molecules with a quantum number m=1 (AKA spin 1). With a spin of 1, the nuclei an be in 3 different states, m=-1, m=0, or m=+1. The state m=+1 is the lowest energy state and will take on the highest population within our Boltzmann distribution of spin states, with 0 as the next highest, and -1 as the lowest. The nuclei's spin will also precess about the direction of the magnetic field. The precession frequency is proportional to the strength of the magnetic field, and is known as the Larmor frequency.
+                </p>
+                <img class='fill-white' src="{% static 'assets/img/lab/Spin_Coherences.png' %}">
+
+                <p class="lead">
+                    In NMR experiments, an additional weak oscillating magnetic field pulse is performed in the transverse direction to the applied magnetic field's direction. In our case, the transverse direction was in the X direction, while our strong homogenous magnetic field was applied in the Z direction. This pulse is set to a frequency that is equal to the Larmor frequency of the nuclei. This pulse will then be on resonnance with the precessing nuclei, causing the nuclei to rotate down towards the axis of the pulse. 
+
                     
                 </p>
             </div>
