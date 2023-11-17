@@ -39,17 +39,13 @@
             </div>
           </div>
         </div>
-        {% with counter=0 %}
-            {% for lab in labs %}
-                {% with counter=counter|add:1%}
-                    {% if counter|divisibleby:2 %}
-                        {% include 'includes/lab/_lab_section.html' with lab=lab position="right"%}
-                    {% else %}
-                        {% include 'includes/lab/_lab_section.html' with lab=lab position="left"%}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        {% endwith %}
+        {% for lab in labs %}
+            {% if forloop.counter|divisibleby:2 %}
+                {% include 'includes/lab/_lab_section.html' with lab=lab position="right"%}
+            {% else %}
+                {% include 'includes/lab/_lab_section.html' with lab=lab position="left"%}
+            {% endif %}
+        {% endfor %}
 
 
         <section class="section section-lg">
