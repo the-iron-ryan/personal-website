@@ -93,4 +93,18 @@
     "short_description": "",
     "description": "Third Lab",
     "pdf_title": "Lab_3_Two_Qubit_Gates__Ryan_Dougherty",
-    "abstract": 
+    "abstract": "In this lab we built upon the theory and experiments form the previous lab to implement the two qubit Deutsch-Josza\nand Grover’s algorithms. We constructed all four possible oracle functions for the Deutsch-Josza algorithm and\nused them to determine whether the encoded function was constant or balanced. This was accomplished in a\nsingle query of the quantum oracle. Deutsch-Josza provides a significant speed up over its classical counterpart,\nwhich requires at least N/2 queries of an oracle to guarantee a solution. We then used Grover’s algorithm to\nperform an unstructured search for a single element in a set of four elements. Due to the benefits of superposition,\nphase kickback, and amplitude amplification, we were able to solve this problem in O(sqrt(n)) time, which provides a\nquadratic speed up over the classical algorithm. We achieved results within a reasonable error margin. However, we\nwere unable to do readouts for our 1H spin states, which inhibits our ability to confidently verify that we achieved\nthe correct result for our Grover’s algorithm."
+  }
+},
+{
+  "model": "home.lab",
+  "pk": 4,
+  "fields": {
+    "title": "Lab 4",
+    "short_description": "",
+    "description": "Fourth and final lab",
+    "pdf_title": "Lab_4_Two_Qubit_Algorithms__RyanDougherty",
+    "abstract": "In this lab we explored a set of 6 NMR experiments on a simple two qubit system of H1 and C13 within molecules\nof chloroform. The H1 and C13 spins are heteronuclear and experience coupling. We explore the effects this spin\ncoupling has on our system and how to properly measure each spin energy transition. We also analyze the effects of\nnoise in our system and examine methods to improve our signal to noise ration (SNR) - especially for C13, which\nprecesses at a relatively low Larmour frequency and is therefore more susceptible to system noise.\nThe experiments include a free induction decay and inverse relaxation experiment of H1 to measure the H1 T2*\nand\nT1 decay values. We conducted a free induction decay and inverse relaxation experiment on C13. We used the\nresults and methods from our C13 experiments to explore various ways to increase our SNR. This includes using\nthe WALTZ-16 method to decouple our H1 atoms from the C13 and taking advantage of the Nuclear Overhauser\nEffect to relax some noise within our system."
+  }
+}
+]
