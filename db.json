@@ -52,7 +52,7 @@
   "pk": 7,
   "fields": {
     "app_label": "home",
-    "model": "lab"
+    "model": "game"
   }
 },
 {
@@ -60,7 +60,7 @@
   "pk": 8,
   "fields": {
     "app_label": "home",
-    "model": "game"
+    "model": "lab"
   }
 },
 {
@@ -68,10 +68,10 @@
   "pk": 1,
   "fields": {
     "title": "Lab 1",
-    "short_description": "",
+    "short_description": "Single Qubits with 1H Nuclear Spin",
     "description": "First NMR Lab",
     "pdf_title": "Lab_1_Single_Qubits__Ryan_Dougherty",
-    "abstract": "In this lab we explored the fundamentals of nuclear magnetic resonance (NMR) and performed a set of 5 experiments\nexploring its effects on an isolated system. In NMR, we surround an ensemble of nuclei in a relatively homogeneous\nmagnetic field which causes each of their spins to precess along their relative +Z axes. The nuclei for these\nexperiments were all H1 atoms inside heavy water (deuterium oxide), which all have an atomic spin of 1. Through\na set of coils located along the +X and -X axes, we were able to apply a set of additional short magnetic pulses\noscillating at the Lamour frequency in order to alter the spin direction and orientation of the nuclei. With these\nmagnetic pulses we were able to perform a free induction decay, pulse length calibration, pulse amplitude calibration,\nlongitudinal relaxation, and Hahn echo experiment."
+    "abstract": "In this lab we explored the fundamentals of nuclear magnetic resonance (NMR) and performed a set of 5 experiments exploring its effects on an isolated system. In NMR, we surround an ensemble of nuclei in a relatively homogeneous magnetic field which causes each of their spins to precess along their relative +Z axes. The nuclei for these experiments were all H1 atoms inside heavy water (deuterium oxide), which all have an atomic spin of 1. Through a set of coils located along the +X and -X axes, we were able to apply a set of additional short magnetic pulses oscillating at the Lamour frequency in order to alter the spin direction and orientation of the nuclei. With these magnetic pulses we were able to perform a free induction decay, pulse length calibration, pulse amplitude calibration, longitudinal relaxation, and Hahn echo experiment."
   }
 },
 {
@@ -79,10 +79,10 @@
   "pk": 2,
   "fields": {
     "title": "Lab 2",
-    "short_description": "",
+    "short_description": "Two Qubits with 1H and 13C Nuclear Spin",
     "description": "Second Lab",
     "pdf_title": "Lab_2_Two_Qubits_Using_NMR__Ryan_Dougherty",
-    "abstract": "In this lab we built off of the concepts from the second lab to conduct 4 additional experiments to explore\nconstructing quantum gates using 1H and 13C nuclei spins. Quantum gates in NMR can be realized with a set of\npulse experiments conducted with pulses along the x and y axes. We also take advantage of the fact that our two\nspins are coupled by a local magnetic field, which will allow us to observe entanglement of the two spin states\nwhen we allow them to freely precess a long the z axes. Our first experiment consisted of building an approximate\nCNOT gate that is a phase off of the traditional CNOT. This was built with a set of 2 pulses and a free precession.\nWe also explored the concept of exhaustive averaging in order to negate noise the other spin states constitute in our\nexperiments. To do this, we performed a second experiment which built out the 3 possible pseudo state matrices.\nLastly, we combined the theory and experimental procedure of the first two to perform a true CNOT gate with no\nphase error. This was built with 4 pulses and a free precession. We were only able to generate results for the 13C\nspins since our NMR system had issues with doing 1H readouts. We go over the theory of how we’d expect to see\nthe 1H spins behave in the same experiments and compare our results to the 13C spins. We also discuss the results\nwe obtained and how they compare to the theory."
+    "abstract": "In this lab we explored a set of 6 NMR experiments on a simple two qubit system of H1 and C13 within molecules of chloroform. The H1 and C13 spins are heteronuclear and experience coupling. We explore the effects this spin coupling has on our system and how to properly measure each spin energy transition. We also analyze the effects of noise in our system and examine methods to improve our signal to noise ration (SNR) - especially for C13, which precesses at a relatively low Larmour frequency and is therefore more susceptible to system noise.\n\nThe experiments include a free induction decay and inverse relaxation experiment of H1 to measure the H1 \\( T_2^* \\) and \\( T_1 \\) decay values. We conducted a free induction decay and inverse relaxation experiment on C13. We used the results and methods from our C13 experiments to explore various ways to increase our SNR. This includes using the WALTZ-16 method to decouple our H1 atoms from the C13 and taking advantage of the Nuclear Overhauser Effect to relax some noise within our system.   "
   }
 },
 {
@@ -90,10 +90,10 @@
   "pk": 3,
   "fields": {
     "title": "Lab 3",
-    "short_description": "",
+    "short_description": "Performing Two Qubit Gate Operations",
     "description": "Third Lab",
     "pdf_title": "Lab_3_Two_Qubit_Gates__Ryan_Dougherty",
-    "abstract": "In this lab we built upon the theory and experiments form the previous lab to implement the two qubit Deutsch-Josza\nand Grover’s algorithms. We constructed all four possible oracle functions for the Deutsch-Josza algorithm and\nused them to determine whether the encoded function was constant or balanced. This was accomplished in a\nsingle query of the quantum oracle. Deutsch-Josza provides a significant speed up over its classical counterpart,\nwhich requires at least N/2 queries of an oracle to guarantee a solution. We then used Grover’s algorithm to\nperform an unstructured search for a single element in a set of four elements. Due to the benefits of superposition,\nphase kickback, and amplitude amplification, we were able to solve this problem in O(sqrt(n)) time, which provides a\nquadratic speed up over the classical algorithm. We achieved results within a reasonable error margin. However, we\nwere unable to do readouts for our 1H spin states, which inhibits our ability to confidently verify that we achieved\nthe correct result for our Grover’s algorithm."
+    "abstract": "In this lab we built off of the concepts from the second lab to conduct 4 additional experiments to explore constructing quantum gates using 1H and 13C nuclei spins. Quantum gates in NMR can be realized with a set of pulse experiments conducted with pulses along the x and y axes. We also take advantage of the fact that our two spins are coupled by a local magnetic field, which will allow us to observe entanglement of the two spin states when we allow them to freely precess a long the z axes. Our first experiment consisted of building an approximate CNOT gate that is a phase off of the traditional CNOT. This was built with a set of 2 pulses and a free precession. We also explored the concept of exhaustive averaging in order to negate noise the other spin states constitute in our experiments. To do this, we performed a second experiment which built out the 3 possible pseudo state matrices. Lastly, we combined the theory and experimental procedure of the first two to perform a true CNOT gate with no phase error. This was built with 4 pulses and a free precession. We were only able to generate results for the 13C spins since our NMR system had issues with doing 1H readouts. We go over the theory of how we'd expect to see the 1H spins behave in the same experiments and compare our results to the 13C spins. We also discuss the results we obtained and how they compare to the theory."
   }
 },
 {
@@ -101,10 +101,10 @@
   "pk": 4,
   "fields": {
     "title": "Lab 4",
-    "short_description": "",
+    "short_description": "Performing the Deutsch-Josza and Grover's Algorithms",
     "description": "Fourth and final lab",
     "pdf_title": "Lab_4_Two_Qubit_Algorithms__RyanDougherty",
-    "abstract": "In this lab we explored a set of 6 NMR experiments on a simple two qubit system of H1 and C13 within molecules\nof chloroform. The H1 and C13 spins are heteronuclear and experience coupling. We explore the effects this spin\ncoupling has on our system and how to properly measure each spin energy transition. We also analyze the effects of\nnoise in our system and examine methods to improve our signal to noise ration (SNR) - especially for C13, which\nprecesses at a relatively low Larmour frequency and is therefore more susceptible to system noise.\nThe experiments include a free induction decay and inverse relaxation experiment of H1 to measure the H1 T2*\nand\nT1 decay values. We conducted a free induction decay and inverse relaxation experiment on C13. We used the\nresults and methods from our C13 experiments to explore various ways to increase our SNR. This includes using\nthe WALTZ-16 method to decouple our H1 atoms from the C13 and taking advantage of the Nuclear Overhauser\nEffect to relax some noise within our system."
+    "abstract": "In this lab we built upon the theory and experiments form the previous lab to implement the two qubit Deutsch-Josza and Grover's algorithms. We constructed all four possible oracle functions for the Deutsch-Josza algorithm and used them to determine whether the encoded function was constant or balanced. This was accomplished in a single query of the quantum oracle. Deutsch-Josza provides a significant speed up over its classical counterpart, which requires at least N/2 queries of an oracle to guarantee a solution. We then used Grover's algorithm to perform an unstructured search for a single element in a set of four elements. Due to the benefits of superposition, phase kickback, and amplitude amplification, we were able to solve this problem in \\( O(\\sqrt{n}) \\) time, which provides a quadratic speed up over the classical algorithm. We achieved results within a reasonable error margin. However, we were unable to do readouts for our 1H spin states, which inhibits our ability to confidently verify that we achieved the correct result for our Grover's algorithm."
   }
 }
 ]
